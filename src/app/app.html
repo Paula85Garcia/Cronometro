@@ -1,0 +1,19 @@
+<div class="cronometro-container">
+  <h2 class="cronometro-title">OBSERVABLE FRÍO</h2>
+  <h3 class="cronometro-sub">¡Bienvenido!</h3>
+
+  <div class="cronometro-display">
+    <div class="display-box">{{ tiempo }}</div>
+    <div class="display-label">SEGUNDOS</div>
+  </div>
+
+  <div class="cronometro-buttons">
+    <button (click)="IniciarCronometro()">Empezar</button>
+    <button (click)="reiniciarCronometro()">Reiniciar</button>
+    <button (click)="DetenerCronometro()">Pausar</button>
+  </div>
+
+  <p class="cronometro-footer">PG 2025</p>
+</div>
+
+<router-outlet />
